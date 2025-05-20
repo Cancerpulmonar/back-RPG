@@ -10,14 +10,12 @@ const pool = new Pool({
 
 
 const pool = new Pool({
-  user: 'bdd_rpg_user',
-  password: 'hXYKxLPjDD6Dr8j3YHGIKXtSgzE5pNws',
-  host: 'dpg-d0m8lc0dl3ps73c4vvs0-a',
+  user: 'rpg_bdd_user',
+  password: '1Bs3FNjSY1XXeSbjkAI8kXITKOArgq6r',
+  host: 'dpg-d0m93i95pdvs7391s2d0-a',
   port: 5432,
-  database: 'rpg-database',
-  ssl: {
-    rejectUnauthorized: false
-  }
+  database: 'rpg-dbb',
+  
 });
 
 
