@@ -14,7 +14,7 @@ app.get('/player/:id', async (req, res) => {
     console.log(id)
 
     try {
-        const query = `SELECT * FROM player WHERE id = '${id}'`;
+        const query = `SELECT * FROM players WHERE id = '${id}'`;
         const db_response = await db.query(query);
 
         if (db_response.rowCount == 1) {
