@@ -1,24 +1,24 @@
 import { Pool } from 'pg';
-
+/*
 const pool = new Pool({
   user: 'postgres',
   password: '1234',
   host: 'localhost',
   port: 5432, // default Postgres port
   database: 'RPG'
-});
+});*/
 
-/*
+
 const pool = new Pool({
-  user: 'smash_m0lt_user',
-  password: 'SRl8NtfOd0cfdaWP19hpgiBQDIWyDUx3',
-  host: 'dpg-d08eu0c9c44c73btckj0-a.frankfurt-postgres.render.com',
+  user: 'bdd_rpg_user',
+  password: 'hXYKxLPjDD6Dr8j3YHGIKXtSgzE5pNws',
+  host: 'dpg-d0m8lc0dl3ps73c4vvs0-a',
   port: 5432,
-  database: 'smash_m0lt',
+  database: 'bdd_rpg',
   ssl: {
     rejectUnauthorized: false
   }
-});*/
+});
 
 
 
