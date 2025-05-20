@@ -14,7 +14,7 @@ const pool = new Pool({
   password: 'hXYKxLPjDD6Dr8j3YHGIKXtSgzE5pNws',
   host: 'dpg-d0m8lc0dl3ps73c4vvs0-a',
   port: 5432,
-  database: 'bdd-rpg',
+  database: 'bdd_rpg',
   ssl: {
     rejectUnauthorized: false
   }
