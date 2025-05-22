@@ -31,6 +31,57 @@ app.get('/player/:id', async (req, res) => {
     }
 });
 
+
+
+// POST /api/players
+app.post('/crearpersonaje', async (req, res) => {
+  const player = req.body;
+
+  try {
+    const result = await db.query(`
+      INSERT INTO players (
+        id,
+        name,
+        heal_points,
+        mana_points,
+        strength,
+        magical_damage,
+        defense,
+        critical_chance,
+        critical_damage,
+        experience,
+        level,
+        coins
+      ) VALUES (
+        '${player.id}',
+        '${player.name}',
+        ${player.hp},
+        ${player.pc},
+        ${player.strength},
+        ${player.magicDMG},
+        ${player.defense},
+        ${player.crit_chance},
+        ${player.crit_DMG},
+        ${player.experience},
+        ${player.level},
+        ${player.gold}
+      );
+    `);
+
+    res.status(201).json({
+      message: 'Personaje creado correctamente'
+    });
+
+  } catch (error) {
+    console.error('Error al crear el personaje:', error);
+    res.status(500).json({ error: 'Error al crear el personaje' });
+  }
+});
+
+
+
+
+
 app.get('/personajes', async (req, res) => {
     try {
         let query = `SELECT * FROM personajes`;
