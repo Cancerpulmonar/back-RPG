@@ -53,8 +53,8 @@ app.post('/crearpersonaje', async (req, res) => {
         level,
         coins
       ) VALUES (
-        '${player.id}',
-        '${player.name}',
+        ${player.id},
+        ${player.name},
         ${player.hp},
         ${player.pc},
         ${player.strength},
