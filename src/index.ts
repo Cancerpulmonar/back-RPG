@@ -5,7 +5,12 @@ app.use(cors());
 
 import bodyParser from 'body-parser';
 const jsonParser = bodyParser.json();
+const corsOptions = {
+  origin: 'http://localhost:8100',
+  optionsSuccessStatus: 200
+};
 
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
