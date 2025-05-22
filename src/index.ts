@@ -6,6 +6,10 @@ app.use(cors());
 import bodyParser from 'body-parser';
 const jsonParser = bodyParser.json();
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+
 import * as db from './db-connection';
 
 app.get('/player/:id', async (req, res) => {
