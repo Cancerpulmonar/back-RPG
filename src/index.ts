@@ -36,6 +36,7 @@ app.get('/player/:id', async (req, res) => {
 // POST /api/players
 app.post('/crearpersonaje', async (req, res) => {
   const player = req.body;
+  console.log(player)
 
   try {
     const result = await db.query(`
