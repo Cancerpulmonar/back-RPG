@@ -49,7 +49,7 @@ app.post('/crearpersonaje', async (req, res) => {
         id,
         name,
         heal_points,
-        mana_points,
+        mana_point,
         strength,
         magical_damage,
         defense,
